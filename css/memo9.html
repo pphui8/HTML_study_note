@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test9</title>
+    <style>
+        /* a属于行内元素，即设置宽高都无效 */
+        /* 想要使a获得块元素可设置宽高的属性 */
+        /* 元素显示模式转换 */
+
+        /* 行内元素转块元素 */
+        a {
+            color: aqua;
+            width: 400px;
+            background-color: burlywood;
+
+            display: block;
+        }
+
+        div {
+            background-color: coral;
+            width: 400px;
+            
+
+            /* 行内块元素：inline-block */
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Test</a>
+    <div>Test2</div>
+    <div>Test3</div>
+</body>
+</html>

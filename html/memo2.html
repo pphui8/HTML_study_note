@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test2</title>
+</head>
+<body>
+    <!-- 表单 -->
+    <!-- 表单域：包含表单的区域。 -->
+    <!-- 表单能将所有信息一次发送至后台处理，常用与注册页面等 -->
+
+    <!-- action:接受并处理表单数据的地址,method: 提交方式，name: 表单域名称 -->
+    <form action="url" method="" name="">
+        <!-- 输入 -->
+        <b>用户名:&nbsp;</b>
+        <!-- maxlength 允许最大输入数 -->
+        <input type="text" name="username" value="默认值" maxlength="20">   <br>
+        <b>密码:&nbsp;</b>
+        <input type="password" name="password">   <br>
+
+        <!-- 多选/单选框 -->
+        <!-- checked: 默认选中此选项 -->
+        <!-- laber用与绑定一个表单元素，当点击laber重的文本时主动跳转到对应表单上，使用for来指定对应id的元素 -->
+        <input type="checkbox" checked="checked" id="agree">
+        <label for="agree" style="user-select: none;">是否同意</label>     <br>
+        <!-- 使用相同name实现单选效果 -->
+        性别：男<input type="radio" name="gender"> &nbsp;女<input type="radio" name="gender">   <br>
+
+        <!-- 提交表单的数据 -->
+        <input type="submit" value="免费注册">
+        <input type="reset" value="重新填写">
+
+        <!-- 各种按钮 -->
+        <input type="button" value="获取验证码">
+        <input type="file" value="上传图片">    <br>
+
+
+        <!-- 下拉表单 -->
+        <!-- select至少包含一对选项 -->
+        <select>
+            <option>选项1</option>
+            <option selected="selected">选项2</option>
+        </select>   <br>
+
+        <!-- 文本域标签 -->
+        <!-- <textarea rows="3" cols="20"> -->
+        <textarea>
+            默认文字
+        </textarea>
+    </form>
+</body>
+</html>

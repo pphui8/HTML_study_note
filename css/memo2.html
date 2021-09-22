@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test2</title>
+    <style>
+        .font {
+            /* 字体可以写多个，若无此字会一个个往后找 */
+            font-family: fantasy;
+            font-size: 24px;
+            /* 文字粗细 */
+            font-weight: lighter;
+            /* 是否斜体 */
+            font-style: italic;
+        }
+        /* 复合样式 */
+        .mixed-font {
+            /* font: font-style font-weight font-size/line-height font-famliy */
+            /* font: italic lighter 24px/16px fantasy; */
+            /* font-size 与 font-famliy不能 */
+            font: italic lighter 24px fantasy;
+        }
+    </style>
+</head>
+<body>
+    <div class="font">試し</div>
+    <div class="mixed-font">Test</div>
+</body>
+</html>

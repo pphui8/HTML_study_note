@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        /* 边框，内/外边距都会影响容器大小（增大对应大小） */
+        div {
+            width: 300px;
+            height: 200px;
+
+            border-width: 10px;
+            /* 实线：solid, 虚线：dashed，点线：dotted */
+            border-style: dotted;
+            border-top: 10px solid #39C5BB;
+        }
+        /* 表格边框 */
+        table,
+        td {
+            text-align: center;
+            width: 300;
+            height: 400;
+
+            border: gold 1px solid;
+            /* 两个表格的边框叠加导致内边框实际宽度是2px而不是1px */
+            border-collapse: collapse;
+        }
+        /* 内边距 */
+        span {
+            background-color: gold;
+            /* padding-left: 30px; */
+            padding: 10px 10px 3px 1px;
+        }
+        /* 外边距 */
+        section {
+            width: 100px;
+            background-color: #39C5bb;
+            /* margin-top: 10px; */
+            /* 外边距可以使块元素水平居中，使左右外边距auto即可（对行内块元素无效text-align: center） */
+            margin: 0 auto; /* 0指上下边距 */
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <span>Test</span><br><br><br><br>
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <th>a</th>
+                <th>b</th>
+                <th>c</th>
+                <th>d</th>
+                <th>e</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table>
+    <section>t1</section>
+    <section>t2</section>
+    <section>t3</section>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <h2>文字类</h2>
+    <p>现在的课程进度：#</p>
+    <article>是文章，<br /> 这个是换行</article>
+    <div>div会自动换行</div>
+    <span>span与div一样（是一个没有属性的容器，但不会换行</span>
+
+    <h2 id="photo">图片、链接类</h2>
+    <img src="xxx" alt="图片不显示时的现实文字" title="width与height建议只设置一个" width="100" /><br />
+    <!-- target为链接的打开方式，_self为默认值，_blank为在新页面中打开 -->
+    <a href="www.pphui8.me" target="_blank">文本或图像</a><br />
+    <!-- ctrl + /快速添加注释 -->
+    <a href="#"><img src="空链接" />返回顶部</a><br />
+    <a href="#photo">锚点链接，快速跳转到页面内的某位置</a><br />
+
+
+    <!-- 表格，列表，表单等 -->
+    <!-- 表格, cellpadding文字距边框距离，cellspacing边框之间距离 -->
+    <table align="center" border="1" cellpadding="0" cellspacing="0">
+        <!-- 表头，内部必须有tr标签位于首部 -->
+        <thead>
+            <!-- 表头单元格 -->
+            <tr>表头默认加粗居中显示</tr>
+        </thead>
+        <tbody>
+            <!-- 单元格 -->
+            <td>一个单元格</td>
+        </tbody>
+    </table>
+
+    单元格合并：
+    1. 找到要合并单元格的左边/上边的单元格
+    2. colspan: 跨列合并（横向合并），rowspan: 跨行合并（纵向合并）
+    3. <td colspan="2"></td>
+
+    <!-- 列表（整齐，整洁，有序） -->
+    <h5>无序列表</h5>
+    <ul>
+        <!-- ul中只能嵌套li，li中随便写 -->
+        <li>一行（无序）</li>
+    </ul>
+
+    <h5>有序列表</h5>
+    <ol>
+        <li>一行（有序）</li>
+    </ol>
+
+    <h5>自定义列表</h5>
+    <dl>
+        <dt>名词1</dt>
+        <dd>解释说明1</dd>
+        <dd>解释说明2</dd>
+    </dl>
+</body>
+</html>

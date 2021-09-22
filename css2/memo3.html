@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        /* 规定子元素边距并没有使子元素产生边距，使父元素产生了边距 */
+        .father {
+            width: 400px;
+            height: 500px;
+            background-color: gold;
+
+            overflow: hidden;
+        }
+        .son {
+            width: 200px;
+            height: 100px;
+            background-color: #39C5BB;
+
+            margin-top: 30px;
+        }
+        /* 
+        1. 父元素定义上边框
+        2. 父元素指定内边距
+        3. 父元素overflow: hidden;
+        */
+        .box {
+            width: 100px;
+            height: 50px;
+            background-color: #ccc;
+            /* 圆角边框，数值即半径 */
+            border-radius: 50%;
+            /* 百分比即与宽度的比例 */
+            /* 可分别设置每个角的半径 */
+            border-top-left-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <div class="box"></div>
+</body>
+</html>
