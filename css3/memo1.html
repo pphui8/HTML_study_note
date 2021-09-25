@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+    <style>
+        .box {
+            /* 
+                定位使用场景：在盒子内自由移动、并可以盖住其他元素
+                子绝父相：
+                子元素用绝对定位（不占位置）
+                父元素用相对定位（要用来占位置）            
+            */
+
+            /* 定位模式（static：静态定位、relative：相对定位、absolute：绝对定位、fixed：固定位置，粘性定位：sticky */
+            /* static: 无定位（即标准流定位） */
+
+            /* relative: 根据原来的位置决定，以前的位置保留（不脱标） */
+            position: relative;
+            top: 100px;
+            
+            /* 
+                absolute: 相对父元素的位置 
+                1. 若元素没有父元素或父元素没有定位，则以浏览器为准
+                2. 父元素有定位，则使用最近一级的父级定位 
+                3. 绝对定位不再占有原先的位置 
+            */
+            position: absolute;
+            top: 100px;
+            right: 100px;
+            bottom: 100px;
+            left: 100px;
+            
+            /* 
+                fixed: 以浏览器的可视窗口为定位（特殊的绝对定位）
+                1. 跟父元素没有任何关系
+                2. 不随滚动条滚动
+                3. 不占有原先位置
+            */
+
+            /* 
+                sticky：以浏览器窗口为定位（滚动条拉出去时附着） 
+                1. 占有原先位置
+                2. 必须添加top/left/right/bottom一个才有效
+                兼容性差
+            */
+            position: sticky;
+            width: 1000px;
+            height: 300px;
+            top: 0;
+            background-color: #35c9bb;
+
+        }
+    </style>
+<body>
+    <div class="box"></div>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+    <p>pp</p>
+</body>
+</html>
