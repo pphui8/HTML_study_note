@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test1</title>
+    <style>
+        /* 属性选择器 */
+        input[type="text"] input[type=text] input[type]{
+            background-color: #35c9bb;
+        }
+        /*
+        [value^="abc"]  /* 前面匹配的 */ 
+        /*
+        [value$="abc"]  /* 后面匹配的 */
+        
+
+        /* 结构伪类选择器 */
+        /* 选择ul下的第一个li */
+        ul li:first-child {
+            /* 指定第一个元素 */
+        }
+
+        ul li:nth-child(3) {
+            /* 指定第三个元素 */
+            /* 
+            1. 数字
+            2. even（偶数）odd（奇数）
+            3. 公式
+            nth-child(n) n从0开始 递增1 只写n即全选
+            3.1. 2n：偶数
+            3.2. 2n+1：奇数
+            3.3. n+5: 从第五个开始
+            3.4. -n+5: 到第五个
+            */
+        }
+
+        /* 结构伪类选择器 */
+        ul div:nth-of-type(1) {
+            /*
+            与nth-child()区别为： 
+            nth-child()必须序号与元素类型匹配（若指定元素不为div就不选）
+            nth-if-type()指的是第n个type是div的元素
+            */
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <input type="password">
+    <input>
+</body>
+</html>

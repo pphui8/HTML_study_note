@@ -57,3 +57,27 @@
 #### 权重叠加
 复合选择器的权重会叠加，复合时累加
 但优先级的优先度大于权重叠加
+
+#### SEO搜索引擎优化
+1. title
+2. description
+3. ketwords
+
+logo的SEO优化
+1. logo中放一个h1标签，表示此内容重要
+2. h1中放一个返回主页的链接
+3. 链接中放上文字（不显示）font-size: 0;
+4. 给链接一个title属性
+```html
+<div class="logo">
+        <h1>
+            <a href="https://pphui8.me" title="pphui8">pphui8</a>
+        </h1>
+</div>
+
+logo a {
+    height: 100%;
+    width: 100%;
+    background: url(../images/xxx.jpg);
+}
+```

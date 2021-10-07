@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        /* 伪元素选择器：可以使用css创建元素 */
+        /* element::before/::after */
+        /* 元素创建在元素里面的前面/后面 */
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: #35c9bb;
+        }
+        .box::after {
+            /* 必须包含一个content!! */
+            content: "8";
+            /* 默认为行内元素 */
+            display: inline-block;
+            
+            width: 20px;
+            height: 20px;
+            background-color: #b4b632;
+        }
+        .box::before {
+            /* 必须包含一个content!! */
+            content: "p";
+            /* 默认为行内元素 */
+            display: inline-block;
+            
+            width: 20px;
+            height: 20px;
+            background-color: #b4b632;
+        }
+        .search {
+            width: 300px;
+            height: 150px;
+            background-color: #123456;
+            /* 子绝父相 */
+            position: relative;
+        }
+        .search::after {
+            content: "\e91e";
+            position: absolute;
+            display: inline-block;
+            height: 10px;
+            
+            top: 65px;
+            right: 29px;
+            background-color: #27e741;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">phui</div>
+    <div class="search"></div>
+</body>
+</html>

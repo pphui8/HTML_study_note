@@ -84,7 +84,27 @@ z-index: ;  //z即z轴
 正数 > 0/auto > 负数
 若index相等则后来居上
 
-## 居中方法
+### 居中方法
 1. margin: auto;（水平居中）
 2. 加定位：left: 50%; margin-left: -盒子一半;（水平居中）
 同理：垂直居中：top: 50%; margin-top: -盒子一半;
+
+### 定位拓展
+1. 定位（固定/绝对定位）会使元素属性变为行内块元素
+2. 浮动会压住盒子，但不会压住盒子中的内容，定位（固定/绝对定位）会
+
+### 元素隐藏
+display: none;
+显示：display: block;
+visibility: hidden;
+显示：visibility: visible;
+
+### 溢出处理
+overflow:
+1. visible：可见（默认）
+2. hidden：不可见
+3. scroll：显示滚动条
+4. auto：需要的时候添加滚动条
+
+### CSS三角形
+大小为0的盒子边框为三角形

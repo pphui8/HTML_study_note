@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        /* 鼠标样式 */
+        p {
+            cursor: pointer;
+        }
+        .no {
+            /* 轮廓线 */
+            outline: none;
+            /* 文本域防止拖动 */
+            resize: none;
+        }
+        .align {
+            /* 垂直居中（必须是行内块元素与文字） */
+            vertical-align: middle;
+            /* 也用来消除图片底下的空白 */
+        }
+        .text {
+            background-color: #35c9bb;
+            width: 100px;
+
+            /* 1. 文字不自动换行 */
+            white-space: nowrap;
+            /* 2. 溢出部分隐藏 */
+            overflow: hidden;
+            /* 3. 显示省略号 */
+            text-overflow: ellipsis;
+        }
+        ul li {
+            float: left;
+            list-style: none;
+            width: 200px;
+            height: 400px;
+            background-color: #35c9bb;
+            border: 1px solid red;
+
+            /* margin负值消除边框叠加 */
+            margin-left: -1px;
+        }
+        ul li:hover {
+            /* 由于上面的效果为遮挡，故右边框属于右盒子不改边框颜色 */
+            /* 加个定位 */
+            position: relative;
+            /* 或者加个层级 */
+            border: 1px solid rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <p>aaa</p>
+    <input type="text" class="no">
+    <input type="text">
+    <textarea name="abc" id="" cols="30" rows="10" class="no"></textarea><br>
+    <img src="https://i2.hdslb.com/bfs/face/38415d3e45f4b85f5ae8675687ae6751f2456b11.jpg@96w_96h_1c_1s.webp" alt="a" class="align">文字</img>
+    <div class="text">溢出的文字变成省略号</div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

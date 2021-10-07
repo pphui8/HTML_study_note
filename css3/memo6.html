@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="abc,edf">
+    <meta name="description" content="简介">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        .box {
+            /* 使边框与外边框不会撑大盒子（content会撑大） */
+            box-sizing: border-box;
+            /* 计算函数 */
+            width: calc(100% - 30px);
+
+            /* 过渡 */
+            /* 要过渡的属性 话费时间 过渡曲线 何时开始(ns之后触发) */
+            /* 过渡曲线：linear(匀速)， ease(渐慢)， ease-in(渐快)，ease-out(渐慢) */
+            /* 多种属性变化不能再加，用逗号分割（或使用all关键字） */
+
+            transition: background-color 1s ease .3s, height 5s ease .3s;
+            transition: all 1s ease .3s;
+
+            background-color: #ad3973;
+        }
+        .box:hover {
+            background-color: #2eceeb;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">abc</div>
+</body>
+</html>
