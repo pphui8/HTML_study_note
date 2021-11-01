@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes move {
+            /* 定义动画 */
+            /* 设置动画起始状态 */
+            0% /* from */ {
+                transform: translateX(0px);
+            }
+            /* 结束动画 */
+            100% /* to */ {
+                transform: translateX(100px);
+            }
+        }
+        @keyframes loop {
+            /* 可省略 */
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(1000px, 0);
+            }
+            50% {
+                transform: translate(1000px, 600px);
+            }
+            75% {
+                transform: translate(0, 1000px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: #39c5bb;
+            
+            /* 调用动画 */
+            /* 调用名称  */
+            animation-name: loop, move;
+            /* 持续时间 */
+            animation-duration: 2s;
+            /* 速度曲线 */
+            animation-timing-function: linear;
+            /* 动画延迟 */
+            animation-delay: 10s;
+            /* 循环次数 */
+            animation-iteration-count: infinite;
+            /* 下一次是否逆向播放 */
+            animation-direction: alternate;
+            /* 动画的停止状态，forwards保留结束状态 */
+            animation-fill-mode: forwards;
+            /* 分几个阶段播放 */
+            animation: steps();
+        }
+        div:hover {
+            /* 动画播放状态 */
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div class=""></div>
+</body>
+</html>

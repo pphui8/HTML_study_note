@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        .tran {
+            /* 转换、不改变原先位置 */
+            /* 百分比数指占自身大小的百分比 */
+            transform: translate(10%, 10%);
+
+            /* 旋转 */
+            /* transform: rotate(180deg); */
+
+            /* 设置转换中心点 */
+            transform-origin: 10px 10px;
+
+            position: relative;
+            width: 500px;
+            height: 600px;
+            background-color: rgb(5, 197, 37);
+        }
+        .center {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(7, 10, 177);
+
+            /* 图标与文字居中 */
+            vertical-align: middle ;
+
+            /* 使用定位+转换居中 */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            /* 设置缩放, x倍, y倍 */
+            transform: scale(x, y);
+        }
+    </style>
+</head>
+<body>
+    <div class="tran">
+        <div class="center"></div>
+    </div>
+</body>
+</html>
