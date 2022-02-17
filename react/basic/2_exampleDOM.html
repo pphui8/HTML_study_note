@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title {
+            background-color: #39C5BB;
+        }
+    </style>
+</head>
+<body>
+    <span id="test"></span>
+
+    <script src="./packges/react.development.js"></script>
+    <script src="./packges/react-dom.development.js"></script>
+    <script src="./packges/babel.min.js"></script>
+    <script type="text/babel">
+        const myID = `abcde`;
+        const myData = "hello, reacT";
+        const dataSet = ["123", "dfs", "klj"];
+
+        const VDOM = (
+            // 使用花括号而非引号
+            <h2 id={myID} className="title">
+                <span style={{color: `pink`}}>{myData.toLowerCase()}</span><br/>
+                <ul>
+                    {
+                        dataSet.map((item, index) => {
+                            return <li key={index}>{item}</li>
+                        })
+                    }
+                </ul>
+            </h2>
+        );
+
+        ReactDOM.render(VDOM, document.getElementById("test"));
+    </script>
+</body>
+</html>

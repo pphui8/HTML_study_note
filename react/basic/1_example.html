@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="./js/jQuery.js"></script> -->
+</head>
+
+<body>
+    <div id="test"></div>
+    <!-- 引入react核心库（注意顺序） -->
+    <script src="https://unpkg.com/react@17.0.2/umd/react.development.js" crossorigin></script>
+    <!-- 映入react-DOM -->
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js" crossorigin></script>
+    <!-- 引入babel，将jsx转为js -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- 使用babel将jsx转为js -->
+    <script type="text/babel">
+        // 创建虚拟DOM, 不要加引号(jsx)
+        const VDOM = (
+            <h1>Hello, React</h1> //里头随便写h5代码
+        )
+        // 渲染虚拟DOM到页面S
+        ReactDOM.render(VDOM, document.getElementById("test"));
+    </script>
+</body>
+</html>
