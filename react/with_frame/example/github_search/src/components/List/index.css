@@ -1,0 +1,25 @@
+.items {
+    fill: #35c9bb;
+    background-color: #35c9bb;
+}
+.items .item {
+    float: left;
+    position: relative;
+    width: 185px;
+    height: 199px;
+    border: 1px solid greenyellow;
+    text-align: center;
+}
+.items .item img {
+    display: block;
+    position: absolute;
+    width: 170px;
+    height: 160px;
+    background-color: #39c5bb;
+    left: 5%;
+}
+.items .item p {
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+}

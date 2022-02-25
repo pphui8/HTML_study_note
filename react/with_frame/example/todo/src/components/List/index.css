@@ -1,0 +1,13 @@
+.list {
+    width: 300px;
+    left: 50%;
+    padding-left: 30px;
+}
+.list .todo_list {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    background-color: #39c5bb;
+    border: 1px solid #144744;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

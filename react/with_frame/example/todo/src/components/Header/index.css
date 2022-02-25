@@ -1,0 +1,9 @@
+.header input {
+    height: 20px;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border: none;
+    outline: 1px solid #14f1e3ad ;
+    border-radius: 3px;
+}

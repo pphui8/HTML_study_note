@@ -1,0 +1,20 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.todo_list_box {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 360px;
+    background-color: #39c5bcad;
+}
+.todo_list_box>h1 {
+    user-select: none;
+    text-align: center;
+    color: rgb(158, 94, 218);
+    transform: translateX(-20px);
+}

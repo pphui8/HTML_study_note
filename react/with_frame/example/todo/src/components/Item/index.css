@@ -1,0 +1,28 @@
+.todo_item {
+    border-bottom: .5px solid black;
+    position: relative;
+}
+.todo_item:hover {
+    background-color: #2fa59d;
+}
+.checked {
+    display: inline-block;
+}
+p {
+    display: inline-block;
+    user-select: none;
+    margin: 4px 0 4px 0;
+    padding: 0;
+}
+.clean_btn {
+    /* visibility: hidden; */
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    background-color: #16f1e7;
+    border: 1px solid #2fa59d;
+}
+.clean_btn:hover {
+    background-color: #06867e;
+    cursor: pointer;
+}

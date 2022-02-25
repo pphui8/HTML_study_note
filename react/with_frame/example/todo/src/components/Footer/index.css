@@ -1,0 +1,18 @@
+.footer {
+    position: relative;
+}
+.footer input {
+    margin: 10px 20px 10px 30px;
+    display: inline-block;
+}
+.footer p {
+    display: inline-block;
+    margin: 2px;
+    padding: 0;
+}
+.footer button {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    background: #12f7e727;
+}
