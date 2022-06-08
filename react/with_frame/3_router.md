@@ -232,6 +232,15 @@ this.props.history.replace('url')
 ## withRouter
 > 已弃用： 使用 useNavigate() 替代
 
+```jsx
+import { Link, Route, Routes, useParams, useNavigate } from 'react-router-dom'
+
+export default function index() {
+  const navigate = useNavigate();
+  ...
+  navigate(`/xxx/xxx/xxx`);
+```
+
 适用情况：想在不是路由组件的地方使用一些路由功能(前进、回退等)  
 withRouter(elem): 将非路由组件包装为路由组件  
 ```jsx
